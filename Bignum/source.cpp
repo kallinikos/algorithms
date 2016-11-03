@@ -84,6 +84,7 @@ bignum add_unsigned(bignum u, bignum v) { // Επιστρέφει το άθρο�
     memset(&out, 0, sizeof(out));
     for(int i=0; i<MAXDIG; ++i) {
         out.d[i]=u.d[i]+v.d[i]+carry;
+        carry=0;
         if(out.d[i]>=BASE) {
             carry=1;
         }
@@ -130,7 +131,7 @@ bignum mult(bignum u, bignum v) { // Επιστρέφει το γινόμενο 
 }
 
 int main() {
-    char str1[MAXDIG], str2[MAXDIG], op;
+    char str1[MAXDIG*POWR], str2[MAXDIG*POWR], op;
     scanf("%s %c %s", str1, &op, str2);
     bignum A,B;
     A.to_bignum(str1);
