@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <stdio.h> // scanf, printf
+#include <stdlib.h> // rand, srand
+#include <time.h> // time
+#include <algorithm> // swap
 
 using namespace std;
 
