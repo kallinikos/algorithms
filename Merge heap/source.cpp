@@ -45,8 +45,7 @@ void delete_min() { // Αφαιρεί την ελάχιστη τιμή από τ
     h=merge(h->l, h->r);
 }
 
-int main()
-{
+int main() {
     srand(time(NULL));
     int N, num;
     scanf("%d", &N);
