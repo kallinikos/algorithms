@@ -34,7 +34,6 @@ void init(int u, int p = -1) {
     }
 }
 
-// n is number of nodes
 void buildSPT() {
     lg[1] = 0;
     for (int i = 2; i < MAX_N * 3; i++)

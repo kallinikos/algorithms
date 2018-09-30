@@ -48,6 +48,8 @@ int main() {
 
     lvl[root] = 0;
     init(root);
+
+    return 0;
 }
 */
 

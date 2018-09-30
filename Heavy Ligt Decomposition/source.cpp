@@ -68,6 +68,8 @@ int main() {
     node_cnt = 0;
     head[root] = root;
     hld(root);
+
+    return 0;
 }
 */
 
