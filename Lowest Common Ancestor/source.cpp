@@ -1,3 +1,9 @@
+/*
+Lowest Common Ancestor implementation with the binary lifting technique.
+- O(N log N) precomputation
+- O(log N) per query
+*/
+
 #include <cstring> // memset
 #include <vector>
 
@@ -34,6 +40,7 @@ int LCA(int u, int v) {
     return par[u][0];
 }
 
+/*
 int main() {
     int root = ;    // <- insert value
 
@@ -42,5 +49,5 @@ int main() {
     lvl[root] = 0;
     init(root);
 }
-
+*/
 
