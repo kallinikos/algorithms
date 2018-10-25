@@ -12,7 +12,7 @@ template<typename T>
 struct Dinic {
     static const int NODES;
     static const int EDGES;
-    static const int INF = numeric_limits<T>::max();
+    static const T INF = numeric_limits<T>::max();
 
     vector<int> adj[NODES];
     int level[NODES], st[NODES];
